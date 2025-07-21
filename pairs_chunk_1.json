@@ -1,0 +1,77 @@
+[
+  { "q": "hi", "a": "Hi there! How can I assist you?" },
+  { "q": "hello", "a": "Hello! Feel free to ask me anything." },
+  { "q": "how are you", "a": "I'm just a bunch of code, but I'm doing great!" },
+
+  { "q": "what is javascript", "a": "JavaScript is a scripting language used to create dynamic web content." },
+  { "q": "what is html", "a": "HTML stands for HyperText Markup Language and is used to structure web pages." },
+  { "q": "what is css", "a": "CSS (Cascading Style Sheets) is used for styling HTML elements." },
+  { "q": "how to center a div in css", "a": "Use 'margin: auto' with a fixed width or use flexbox for centering." },
+  { "q": "what is react", "a": "React is a JavaScript library for building user interfaces." },
+  { "q": "what is node.js", "a": "Node.js is a runtime that lets you run JavaScript outside the browser." },
+
+  { "q": "who is apj abdul kalam", "a": "Dr. Kalam was India's 11th President and a respected scientist." },
+  { "q": "who is elon musk", "a": "Elon Musk is the CEO of Tesla and SpaceX, known for pushing tech boundaries." },
+  { "q": "who is narendra modi", "a": "He is the current Prime Minister of India." },
+
+  { "q": "what is msrit", "a": "M. S. Ramaiah Institute of Technology is a top engineering college in Bangalore." },
+  { "q": "where is msrit", "a": "MSRIT is located in Mathikere, Bangalore, India." },
+  { "q": "is msrit good", "a": "Yes, MSRIT is consistently ranked among top private engineering colleges in India." },
+
+  { "q": "how to become a web developer", "a": "Start with HTML, CSS, and JavaScript. Then learn React or Angular and backend tech like Node.js." },
+  { "q": "should i learn python or javascript", "a": "Both are great! Python is versatile. JavaScript is best for web development." },
+
+  { "q": "what is a function in programming", "a": "A function is a reusable block of code that performs a task." },
+  { "q": "what is variable", "a": "A variable stores data that can be used or changed in a program." },
+
+  { "q": "what is ai", "a": "AI stands for Artificial Intelligence. It allows machines to mimic human-like thinking." },
+  { "q": "what is machine learning", "a": "Machine Learning is a method where computers learn from data to make predictions." },
+
+  { "q": "tell me a joke", "a": "Why did the programmer quit his job? Because he didn’t get arrays!" },
+  { "q": "what is 1 + 1", "a": "1 + 1 equals 2. Most of the time. 😉" },
+
+  { "q": "what is github", "a": "GitHub is a web-based platform for version control using Git." },
+  { "q": "what is stack overflow", "a": "Stack Overflow is a popular forum where developers ask coding questions." },
+  { "q": "what is api", "a": "API stands for Application Programming Interface. It allows software to communicate." },
+
+  { "q": "what is data structure", "a": "A data structure is a way of organizing and storing data for efficient access." },
+  { "q": "what is algorithm", "a": "An algorithm is a step-by-step procedure to solve a problem." },
+
+  { "q": "best programming language", "a": "There's no best one. For web: JS. For AI: Python. For systems: C/C++." },
+
+  { "q": "what is cloud computing", "a": "Cloud computing is the delivery of computing services over the internet." },
+  { "q": "what is devops", "a": "DevOps combines software development and IT operations for faster deliveries." },
+
+  { "q": "explain operating system", "a": "An OS manages computer hardware and software resources." },
+  { "q": "what is linux", "a": "Linux is an open-source operating system based on UNIX." },
+
+  { "q": "tips for coding interview", "a": "Practice DSA problems, review projects, and explain your thinking clearly." },
+  { "q": "how to prepare for placement", "a": "Learn your core subjects, build a resume, and practice aptitude + coding." },
+
+  { "q": "who discovered gravity", "a": "Sir Isaac Newton famously formulated the law of gravity." },
+  { "q": "what is black hole", "a": "A black hole is a region in space where gravity is so strong that nothing escapes." },
+  { "q": "what is quantum computing", "a": "Quantum computing uses quantum bits to perform complex computations." },
+
+  { "q": "what are the planets", "a": "In order: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune." },
+
+  { "q": "tell me about ms dhoni", "a": "Mahendra Singh Dhoni is a former captain of the Indian cricket team and a legend of the game." },
+  { "q": "what is cricket", "a": "Cricket is a bat and ball sport popular in countries like India, Australia, and England." },
+
+  { "q": "hobbies of a developer", "a": "Many devs love coding, gaming, reading, and contributing to open-source!" },
+  { "q": "how to stay focused", "a": "Use the Pomodoro technique, avoid distractions and set daily goals." },
+
+  { "q": "what is frontend", "a": "Frontend is the part of a website users interact with, built using HTML, CSS, JS." },
+  { "q": "what is backend", "a": "Backend logic runs on the server, handling databases, APIs, and more." },
+
+  { "q": "useful websites for students", "a": "Useful sites: GeeksforGeeks, Coursera, FreeCodeCamp, Khan Academy." },
+  { "q": "tools for coding", "a": "VS Code, Git, Chrome DevTools, Postman, and Stack Overflow." },
+
+  { "q": "what is sql", "a": "SQL is a language used to manage and query relational databases." },
+  { "q": "what is nosql", "a": "NoSQL databases store data in formats like JSON instead of tables." },
+
+  { "q": "what is hackathon", "a": "A hackathon is a coding event where developers build solutions in a short time." },
+  { "q": "how to create a website", "a": "Start with HTML + CSS, then use JavaScript and hosting platforms." },
+
+  { "q": "inspirational quote", "a": "“The best way to predict the future is to create it.” – Peter Drucker" },
+  { "q": "tell me something interesting", "a": "Bananas are berries, but strawberries aren’t!" }
+]

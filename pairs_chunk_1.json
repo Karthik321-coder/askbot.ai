@@ -1,4 +1,13 @@
 [
+
+  {
+  "topics": ["Coding", "AI", "General Knowledge", "MSRIT", "Science"],
+  "numberOfQuestions": 1000,
+  "format": "JSON (q/a)",
+  "language": "English",
+  "level": "Beginner to Advanced"
+}
+
   { "q": "hi", "a": "Hi there! How can I assist you?" },
   { "q": "hello", "a": "Hello! Feel free to ask me anything." },
   { "q": "how are you", "a": "I'm just a bunch of code, but I'm doing great!" },

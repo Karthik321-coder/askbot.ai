@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AskBot - Offline AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-header">
+      <span><i class="fas fa-robot"></i> AskBot</span>
+      <button id="minimizeChat"><i class="fas fa-minus"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot-message">
+        <i class="fas fa-robot"></i>
+        <div class="message-content">Hi! Ask me anything. I'm an offline AI!</div>
+      </div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="messageInput" placeholder="Type your question..." />
+      <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <button class="chatbot-toggle" id="chatbotToggle">
+    <i class="fas fa-comments"></i>
+  </button>
+  
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-sun" id="sun-icon"></i>
+        <i class="fas fa-moon" id="moon-icon"></i>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to access AI-powered answers</p>
+                </div>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class="fas fa-eye password-toggle" id="passwordToggle"></i>
+                    </div>
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+                <div class="demo-credentials">
+                    <p><strong>Demo Login:</strong> username: admin, password: admin123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-magic"></i>
+                <span>AskBot</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="loginBtn" class="login-button">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+                <button id="logoutBtn" class="logout-button" style="display: none;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Ask Any Question,
+                        <span class="gradient-text">Get Intelligent Answers</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Powered by advanced AI technology, AskGenie provides accurate, instant answers to all your questions with real-time news updates.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="cta-primary" id="startChatting">
+                            <i class="fas fa-comments"></i>
+                            Start Asking Questions
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="float-element">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="float-element">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="float-element">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Powerful AI Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Advanced AI Chatbot</h3>
+                        <p>Get intelligent responses using cutting-edge natural language processing technology.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Perfect experience across all devices with modern, adaptive interface design.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3>Dark Mode Support</h3>
+                        <p>Eye-friendly dark theme that adapts to your preference and system settings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">About the Developer</h2>
+                    <!-- About Section -->
+<div class="about-section" id="aboutSection">
+    <div class="about-container glassmorphism">
+        <div class="about-header">
+            <div class="developer-avatar">
+                <div class="avatar-circle">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="avatar-status"></div>
+            </div>
+            <div class="developer-info">
+                <h1 class="developer-name">Karthik</h1>
+                <p class="developer-title">Web Developer</p>
+                <div class="developer-badges">
+                    <span class="badge">Full Stack</span>
+                    <span class="badge">React Expert</span>
+                    <span class="badge">BTech MSRIT</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-grid">
+                <div class="about-card glassmorphism">
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Currently pursuing BTech at MSRIT Bangalore, specializing in modern web technologies and software engineering principles.</p>
+                </div>
+
+                <div class="about-card glassmorphism">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Expertise</h3>
+                    <p>Passionate web developer with expertise in HTML5, CSS3, JavaScript, React, and modern UI/UX design patterns.</p>
+                </div>
+
+                <div class="about-card glassmorphism">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Projects</h3>
+                    <p>Created innovative web applications including this interactive quiz platform with advanced animations and user experience.</p>
+                </div>
+
+                <div class="about-card glassmorphism">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Dedicated to creating beautiful, functional websites that solve real-world problems and enhance user experiences.</p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fas fa-robot"></i>
+                <span>AI Assistant</span>
+            </div>
+            <button class="chatbot-minimize" id="minimizeChat">
+                <i class="fas fa-minus"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <i class="fas fa-robot"></i>
+                <div class="message-content">
+                    Hello! I'm your AI assistant. Ask me anything and I'll provide intelligent, helpful answers.
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="messageInput" placeholder="Ask me anything..." />
+            <button id="sendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Notifications -->
+    <div class="notification" id="notification"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+
+    <script>
+  // paste entire script.js content here 👇
+
+  const chatbotContainer = document.getElementById('chatbotContainer');
+  const chatbotToggle = document.getElementById('chatbotToggle');
+  const chatbotMessages = document.getElementById('chatbotMessages');
+  const messageInput = document.getElementById('messageInput');
+  const sendMessage = document.getElementById('sendMessage');
+  const minimizeChat = document.getElementById('minimizeChat');
+
+  chatbotToggle.addEventListener('click', () => {
+    chatbotContainer.classList.toggle('active');
+    messageInput.focus();
+  });
+
+  minimizeChat.addEventListener('click', () => {
+    chatbotContainer.classList.remove('active');
+  });
+
+  sendMessage.addEventListener('click', sendChatMessage);
+  messageInput.addEventListener('keypress', e => {
+    if (e.key === 'Enter') sendChatMessage();
+  });
+
+  function addMessage(content, sender) {
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `message ${sender}-message`;
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+    contentDiv.textContent = content;
+
+    msgDiv.appendChild(contentDiv);
+    chatbotMessages.appendChild(msgDiv);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  let fuse;
+let dataset = []; // Q-A pairs
+
+// Load a chunk of dataset dynamically
+async function loadDataChunk(path = 'pairs_chunk_1.json') {
+    const res = await fetch(path);
+    const data = await res.json();
+    dataset = data;
+    fuse = new Fuse(dataset, {
+        keys: ['q'],
+        threshold: 0.4,
+        includeScore: true
+    });
+}
+
+
+
+</script>
+</body>
+</html>
